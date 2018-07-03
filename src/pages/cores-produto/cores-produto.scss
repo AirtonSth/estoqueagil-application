@@ -1,0 +1,22 @@
+page-cores-produto {
+    .imagem-cores{
+        width: auto;
+        margin: auto;
+        display: block;
+        max-width: 80%;
+    }
+    .bold-title{
+        font-size: inherit;
+        font-weight: bold;
+        color: #007fff;
+
+    }
+    .textos{
+        color: #488aff;
+        background: none;
+        text-align: center;
+        a{
+            color: #488aff;
+        }
+    }    
+}

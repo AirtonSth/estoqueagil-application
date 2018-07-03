@@ -1,0 +1,60 @@
+<!--
+  Generated template for the MovimentoEstoquePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Seu Estoque Ágil</ion-title>
+    <ion-buttons end>
+        <button ion-button icon-only (click)="logout()">
+          <ion-icon class="toolbar-icon" name="log-out"></ion-icon>
+        </button>
+      </ion-buttons>    
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+    <img class="entrada-saida" src="/assets/imgs/entrada-saida-estoque.png"/>
+    <ion-row>
+          <ion-col> <p text-center >Vamos Começar! Deseja incluir ou remover?</p></ion-col>
+    </ion-row>
+      <ion-row>
+          <ion-col>
+              <ion-buttons start>
+                  <button (click)="adicionar()" ion-button icon-left full color="secondary">
+                    <ion-icon ios="ios-add-circle" md="md-add-circle"></ion-icon>
+                    entrada
+                  </button>
+                </ion-buttons>
+          </ion-col>
+          <ion-col>
+              <ion-buttons start>
+                  <button (click)="remover()" ion-button icon-left full color="danger">
+                    <ion-icon ios="ios-remove-circle" md="md-remove-circle"></ion-icon>
+                    saída
+                  </button>
+                </ion-buttons>
+            </ion-col>          
+    </ion-row>
+    <ion-list radio-group (ionChange)="selecionarTipoProduto($event)">
+        <ion-row>
+            <ion-col>
+            <ion-item>
+                <ion-label>Capinhas</ion-label>
+                <ion-radio value="1" checked></ion-radio>
+            </ion-item>
+          </ion-col>
+          <ion-col>
+            <ion-item>
+                <ion-label>Películas</ion-label>
+                <ion-radio value="2"></ion-radio>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+    </ion-list>
+    <p class="textos"><a (click)="destaque()">Destaques do mês</a></p>
+</ion-content>

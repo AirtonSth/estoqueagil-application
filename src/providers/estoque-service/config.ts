@@ -1,0 +1,1 @@
+export const ESTOQUEAGIL_API_URL = 'https://fathomless-garden-62100.herokuapp.com/';

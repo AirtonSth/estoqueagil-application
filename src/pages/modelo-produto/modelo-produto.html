@@ -1,0 +1,34 @@
+<!--
+  Generated template for the ModeloProdutoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Modelos Disponiveis</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-row>
+      <ion-col> <h2 text-center >{{nomeMarcaProduto}}</h2></ion-col>
+</ion-row>    
+<ion-list>
+    <ion-row>
+        <ion-col>
+        <ion-item *ngFor="let modelo of modelos" >
+            <button ion-item  text-center (click)="modeloSelecionado(modelo.id)">
+                <p class="bold-title">{{ modelo.descricao }}</p>
+            </button>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+</ion-list>
+
+<p class="textos"><a (click)="novoModelo()">Cadastrar um novo produto</a></p>
+</ion-content>
+
