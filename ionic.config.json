@@ -5,7 +5,7 @@
   "proxies": [
     {
       "path": "/api",
-      "proxyUrl": "https://fathomless-garden-62100.herokuapp.com"
+      "proxyUrl": "urlDaApi"
     }
   ],
   "integrations": {
